@@ -33,7 +33,7 @@ Package.onUse( function ( api ) {
     'random',
     'ejson',
     'underscore',
-    'bquarks:aerial-minimongo@0.0.11',
+    'bquarks:aerial-minimongo',
     'ddp',
     'tracker',
     'diff-sequence',
