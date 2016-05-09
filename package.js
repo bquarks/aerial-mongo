@@ -8,7 +8,7 @@
 // minutiae.
 
 Package.describe( {
-  name: 'bquarks:aerialjs',
+  name: 'bquarks:aerial-mongo',
   version: '0.0.12',
   // Brief, one-line summary of the package.
   summary: 'Meteor package to connect web apps with corbel platform',
