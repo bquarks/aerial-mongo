@@ -41,7 +41,7 @@ Package.onUse( function ( api ) {
     'ecmascript'
   ]);
 
-  api.use('bquarks:aerial-minimongo', { weak: false });
+  api.use('bquarks:aerial-minimongo@0.0.14', { weak: false });
 
   // Binary Heap data structure is used to optimize oplog observe driver
   // performance.
