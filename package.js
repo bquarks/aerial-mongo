@@ -9,7 +9,7 @@
 
 Package.describe( {
   name: 'bquarks:aerial-mongo',
-  version: '0.0.14',
+  version: '0.0.15',
   // Brief, one-line summary of the package.
   summary: 'Meteor package to connect web apps with corbel platform',
   // URL to the Git repository containing the source code for this package.
@@ -39,9 +39,9 @@ Package.onUse( function ( api ) {
     'mongo-id',
     'check',
     'ecmascript'
-  ]);
+  ] );
 
-  api.use('bquarks:aerial-minimongo@0.0.14', { weak: false });
+  api.use( 'bquarks:aerial-minimongo@0.0.19', { weak: false } );
 
   // Binary Heap data structure is used to optimize oplog observe driver
   // performance.
