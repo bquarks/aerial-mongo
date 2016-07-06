@@ -88,7 +88,7 @@ Mongo.Collection = function ( name, options, config ) {
     };
 
     break;
-  }
+}
 
   self._transform = LocalCollection.wrapTransform( options.transform );
 
@@ -308,7 +308,7 @@ _.extend( Mongo.Collection.prototype, {
    * @param {Number} options.pollingThrottleMs (Server only) Minimum time to allow between re-polling. Increasing this will save CPU and mongo load at the expense of slower updates to users. Decreasing this is not recommended. In milliseconds. Defaults to 50 milliseconds.
    * @returns {Mongo.Cursor}
    */
-  find: function ( /* selector, options */) {
+  find: function ( /* selector, options */ ) {
     // Collection.find() (return all docs) behaves differently
     // from Collection.find(undefined) (return 0 docs).  so be
     // careful about the length of arguments.
@@ -318,8 +318,8 @@ _.extend( Mongo.Collection.prototype, {
                                  self._getFindOptions( argArray ) );
   },
 
-  distinct: function ( dis, rel ) {
-    return this._collection.distinct( dis, rel );
+  distinct: function ( dis, rel, domain ) {
+    return this._collection.distinct( dis, rel, domain );
   },
 
   /**
@@ -337,7 +337,7 @@ _.extend( Mongo.Collection.prototype, {
    * @param {Function} options.transform Overrides `transform` on the [`Collection`](#collections) for this cursor.  Pass `null` to disable transformation.
    * @returns {Object}
    */
-  findOne: function ( /* selector, options */) {
+  findOne: function ( /* selector, options */ ) {
     var self = this;
     var argArray = _.toArray( arguments );
     return self._collection.findOne( self._getFindSelector( argArray ),
