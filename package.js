@@ -9,7 +9,7 @@
 
 Package.describe( {
   name: 'bquarks:aerial-mongo',
-  version: '0.0.17',
+  version: '0.0.18',
   // Brief, one-line summary of the package.
   summary: 'Meteor package to connect web apps with corbel platform',
   // URL to the Git repository containing the source code for this package.

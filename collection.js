@@ -632,7 +632,7 @@ Mongo.Collection.prototype.remove = function remove( selector, options, callback
   const wrappedCallback = wrapCallback( callback );
 
   if ( this._isRemoteCollection() ) {
-    return this._callMutatorMethod( 'remove', [selector], wrappedCallback );
+    return this._callMutatorMethod( 'remove', [selector, options], wrappedCallback );
   }
 
   // it's my collection.  descend into the collection object
